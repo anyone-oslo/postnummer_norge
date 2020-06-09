@@ -48,7 +48,7 @@ describe PostnummerNorge::PostalCode do
 
       it { is_expected.to be_an(Array) }
       specify { expect(postal_code).to be_a(described_class) }
-      specify { expect(postal_code.code).to eq("4085") }
+      specify { expect(postal_code.code).to eq("4077") }
       specify { expect(postal_code.name).to eq("HUNDVÅG") }
       specify { expect(postal_code.municipality).to eq("STAVANGER") }
     end
