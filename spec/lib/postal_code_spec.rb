@@ -6,8 +6,8 @@ include PostnummerNorge
 describe PostnummerNorge::PostalCode do
 
   it 'checks for existence' do
-    PostalCode.exists?('0662').should be_true
-    PostalCode.exists?('0002').should be_false
+    PostalCode.exists?('0662').should eq(true)
+    PostalCode.exists?('0002').should eq(false)
   end
 
   it 'finds postal code by number' do

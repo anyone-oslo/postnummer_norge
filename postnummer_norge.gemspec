@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "postnummer_norge"
   s.version     = PostnummerNorge::VERSION
   s.authors     = ["Inge Jørgensen"]
-  s.email       = ["inge@manualdesign.no"]
+  s.email       = ["inge@anyone.no"]
   s.homepage    = ""
   s.summary     = %q{Ruby gem for looking up and verifying Norwegian postal codes}
   s.summary     = %q{Ruby gem for looking up and verifying Norwegian postal codes}
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  s.add_development_dependency "rspec", ">= 2.10.0"
-  s.add_development_dependency "rake", "0.9.2.2"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "rake"
   # s.add_runtime_dependency "rest-client"
 end
