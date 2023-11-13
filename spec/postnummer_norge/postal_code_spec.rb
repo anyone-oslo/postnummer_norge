@@ -10,13 +10,13 @@ describe PostnummerNorge::PostalCode do
     context "when code exists" do
       let(:code) { "0662" }
 
-      it { is_expected.to eq(true) }
+      it { is_expected.to be(true) }
     end
 
     context "when code does not exist" do
       let(:code) { "0002" }
 
-      it { is_expected.to eq(false) }
+      it { is_expected.to be(false) }
     end
   end
 
@@ -34,7 +34,7 @@ describe PostnummerNorge::PostalCode do
     context "when code does not exist" do
       let(:code) { "0002" }
 
-      it { is_expected.to eq(nil) }
+      it { is_expected.to be_nil }
     end
   end
 
@@ -56,7 +56,7 @@ describe PostnummerNorge::PostalCode do
     context "when name does not exist" do
       let(:name) { "XYZZYX" }
 
-      it { is_expected.to eq(nil) }
+      it { is_expected.to be_nil }
     end
   end
 end

@@ -11,16 +11,13 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = "Norwegian postal codes"
 
-  # s.rubyforge_project = "postnummer_norge"
+  s.required_ruby_version = ">= 3.0.0"
 
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  s.add_development_dependency "rake"
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "simplecov", "0.17.1"
   # s.add_runtime_dependency "rest-client"
+  s.metadata["rubygems_mfa_required"] = "true"
 end

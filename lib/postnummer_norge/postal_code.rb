@@ -11,12 +11,12 @@ module PostnummerNorge
 
       def find(code)
         matches = postal_codes.select { |pc| pc.code == code.to_s }
-        !matches.empty? ? matches.first : nil
+        matches.empty? ? nil : matches.first
       end
 
       def find_by_name(name)
         matches = postal_codes.select { |pc| pc.name.downcase == name.to_s.downcase }
-        !matches.empty? ? matches : nil
+        matches.empty? ? nil : matches
       end
 
       def postal_codes
@@ -24,7 +24,7 @@ module PostnummerNorge
       end
 
       def load_postal_codes
-        File.open(data_file, "r", &:read).split("\n").compact.map do |line|
+        File.read(data_file).split("\n").compact.map do |line|
           new(*line.split("\t"))
         end
       end
