@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    postnummer_norge (0.0.2)
+    postnummer_norge (1.0.0)
 
 GEM
   remote: http://rubygems.org/
