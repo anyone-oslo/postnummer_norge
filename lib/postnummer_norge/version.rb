@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module PostnummerNorge
-  VERSION = "1.0.0"
+  VERSION = File.read(File.expand_path("../../VERSION", __dir__)).strip unless PostnummerNorge.const_defined?(:VERSION)
 end
