@@ -4,7 +4,14 @@
     ".": {
       "release-type": "ruby",
       "package-name": "postnummer_norge",
-      "version-file": "VERSION"
+      "version-file": "VERSION",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "Gemfile.lock",
+          "regex": "postnummer_norge \\((?<version>.+?)\\)"
+        }
+      ]
     }
   }
 }
