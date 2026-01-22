@@ -2,8 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "packages": {
     ".": {
-      "release-type": "simple",
+      "release-type": "ruby",
       "package-name": "postnummer_norge",
+      "version-file": "lib/postnummer_norge/version.rb",
       "extra-files": [
         {
           "type": "generic",
